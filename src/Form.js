@@ -50,6 +50,7 @@ function Form(props) {
 
             {/* ////////// CHECKBOXES ////////// */}
             <label><input
+                data-cy_instructions_input='cy_toppings_input'
                 checked={values.toppings.ham}
                 onChange={onCheckboxChange}
                 name='ham'
@@ -77,7 +78,7 @@ function Form(props) {
 
             <label>Special Instructions: &nbsp;
       <input
-                    data-cy_instructions_input='cy_instructions_input'
+
                     value={values.instructions}
                     onChange={onInputChange}
                     name='instructions'
